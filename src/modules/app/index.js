@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MainPage = ({ container }) => {
     return (
         <div>
-            <p>My App</p>
+            <p>Hello Poco</p>
             <pre style={{ fontSize: '10px', color: '#ccc' }}>
                 {JSON.stringify(container.configuration.config, null, 2)}
             </pre>
