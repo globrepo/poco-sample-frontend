@@ -1,0 +1,31 @@
+{
+  "name": "poco-sample-frontend",
+  "version": "0.0.1",
+  "description": "A simple front-end example application built using the Poco framework. This repo is designed as a guide to help when on-boarding new engineers at Globality.",
+  "author": "Globality Engineering",
+  "license": "UNLICENSED",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Tom Hill",
+      "email": "tom.hill@globality.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/globality-corp/poco-sample-frontend.git"
+  },
+  "scripts": {
+    "start": "yarn run serve",
+    "serve": "gi-webapp-run serve --port 5000"
+  },
+  "dependencies": {
+    "@globality/poco": "^0.1.2",
+    "react": "^16.9.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@globality/gi-webapp-build-tools": "^0.8.0"
+  }
+}
