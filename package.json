@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "yarn run serve",
-    "serve": "gi-webapp-run serve --port 9999"
+    "serve": "gi-webapp-run serve --port 5000"
   },
   "dependencies": {
     "@globality/poco": "^0.1.2",
