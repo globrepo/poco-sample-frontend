@@ -18,6 +18,7 @@
   "scripts": {
     "start": "yarn run serve",
     "serve": "gi-webapp-run serve --port 5000",
+    "build": "gi-webapp-run build",
     "build:dev": "yarn build",
     "lint": "gi-webapp-run lint",
     "test": "gi-webapp-run test"
