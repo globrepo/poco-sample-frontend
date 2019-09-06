@@ -9,19 +9,19 @@ const MainPage = ({ container }) => {
             <pre style={{ fontSize: '10px', color: '#ccc' }}>
                 {JSON.stringify(container.configuration.config, null, 2)}
             </pre>
-            <Link to='/secondary'>Next</Link>
+            <Link to="/secondary">Next</Link>
         </div>
     );
-}
+};
 
 const SecondPage = () => {
     return (
         <div>
             <p>Secondary page</p>
-            <Link to='/'>Go back</Link>
+            <Link to="/">Go back</Link>
         </div>
     );
-}
+};
 
 export default function createApp ({ container, onReady }) {
     const { history } = container;
@@ -30,8 +30,8 @@ export default function createApp ({ container, onReady }) {
     return (
         <Router history={history}>
             <Switch>
-                <Route path='/secondary' component={SecondPage} exact />
-                <Route path='/' render={() => <MainPage container={container} />} />
+                <Route path="/secondary" component={SecondPage} exact />
+                <Route path="/" render={() => <MainPage container={container} />} />
             </Switch>
         </Router>
     );
