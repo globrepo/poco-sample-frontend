@@ -1,24 +1,16 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router';
 import { Link } from 'react-router-dom';
+import StyledExample from "./StyledExample"
 
 const MainPage = ({ container }) => {
     return (
         <div>
-            <p>Hello Poco</p>
-            <pre style={{ fontSize: '10px', color: '#ccc' }}>
+            <h2>Front-end developer playground</h2>
+            {/* <pre style={{ fontSize: '10px', color: '#ccc' }}>
                 {JSON.stringify(container.configuration.config, null, 2)}
-            </pre>
-            <Link to='/secondary'>Next</Link>
-        </div>
-    );
-}
-
-const SecondPage = () => {
-    return (
-        <div>
-            <p>Secondary page</p>
-            <Link to='/'>Go back</Link>
+            </pre> */}
+            <Link to='/styled'>Styled components</Link>
         </div>
     );
 }
@@ -30,7 +22,7 @@ export default function createApp ({ container, onReady }) {
     return (
         <Router history={history}>
             <Switch>
-                <Route path='/secondary' component={SecondPage} exact />
+                <Route path='/styled' component={StyledExample} exact />
                 <Route path='/' render={() => <MainPage container={container} />} />
             </Switch>
         </Router>
