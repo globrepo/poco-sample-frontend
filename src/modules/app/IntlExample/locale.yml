@@ -1,0 +1,6 @@
+---
+basic:
+    message: Hello, world!
+
+advanced:
+    message: Hello, {subject}!
