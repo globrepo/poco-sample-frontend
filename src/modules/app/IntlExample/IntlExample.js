@@ -1,13 +1,12 @@
 import React from "react"
 import { injectIntl, FormattedMessage } from 'react-intl';
-import {Back} from "../styled-components"
-import Styled from "./styled-components"
+import * as Styled from "../styled-components"
 import loc from './locale.yml'; // eslint-disable-line no-unused-vars
 
 function IntlExample ({intl: { formatMessage: fmt }}) {
     return (
         <div>
-            <Back to="/">Back</Back>
+            <Styled.Back to="/">Back</Styled.Back>
             <h2>Localization</h2>
             <Styled.ExampleSection>
                 <div>Using <code>&#60;FormattedMessage /&#62;</code> component</div>

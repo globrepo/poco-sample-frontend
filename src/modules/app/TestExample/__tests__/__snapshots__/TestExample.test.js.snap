@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TestExample /> Markup should stay consistent should not have any changes without a new snapshot 1`] = `
+<div>
+  <styled-components__Back
+    to="/"
+  >
+    Back
+  </styled-components__Back>
+  <h2>
+    Testing
+  </h2>
+  <styled-components__ExampleSection>
+    <div>
+      Using snapshots
+    </div>
+    <code>
+      expect(shallow(&lt;Component /&gt;)).toMatchSnapshot()
+    </code>
+  </styled-components__ExampleSection>
+  <styled-components__ExampleSection>
+    <div>
+      Updating snapshots
+    </div>
+    <code>
+      yarn test -u
+    </code>
+  </styled-components__ExampleSection>
+</div>
+`;

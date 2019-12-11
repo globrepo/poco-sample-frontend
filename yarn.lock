@@ -268,10 +268,10 @@
     rxjs-compat "^6.5.3"
     trix "^1.1.0"
 
-"@globality/gi-webapp-build-tools@^0.8.0":
-  version "0.8.0"
-  resolved "https://globality.jfrog.io/globality/api/npm/npm/@globality/gi-webapp-build-tools/-/@globality/gi-webapp-build-tools-0.8.0.tgz#a31445ea496610eb28b9d7a97dc4136bc49b2131"
-  integrity sha1-oxRF6klmEOsoudepfcQTa8SbITE=
+"@globality/gi-webapp-build-tools@^0.10.0":
+  version "0.10.0"
+  resolved "https://globality.jfrog.io/globality/api/npm/npm/@globality/gi-webapp-build-tools/-/@globality/gi-webapp-build-tools-0.10.0.tgz#0cf17155f2ca13b237d3c77d3db2a935300f4826"
+  integrity sha1-DPFxVfLKE7I308d9PbKpNTAPSCY=
   dependencies:
     "@sentry/cli" "^1.45.0"
     autoprefixer "^9.1.5"

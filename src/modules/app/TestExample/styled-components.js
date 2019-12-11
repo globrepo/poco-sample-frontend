@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import {PillButton as _PillButton} from "@globality/gi-web-components"
 
 const ExampleSection = styled.div`
     padding: 1rem;

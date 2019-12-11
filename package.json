@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "yarn run serve",
-    "serve": "gi-webapp-run serve --port 5000"
+    "serve": "gi-webapp-run serve --port 5000",
+    "test": "gi-webapp-run test"
   },
   "dependencies": {
     "@globality/gi-redux-form": "^2.47.0",
@@ -32,6 +33,6 @@
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
-    "@globality/gi-webapp-build-tools": "^0.8.0"
+    "@globality/gi-webapp-build-tools": "^0.10.0"
   }
 }
