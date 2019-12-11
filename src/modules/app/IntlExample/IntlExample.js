@@ -1,23 +1,24 @@
 import React from "react"
 import { injectIntl, FormattedMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
+import {Back} from "../styled-components"
 import Styled from "./styled-components"
 import loc from './locale.yml'; // eslint-disable-line no-unused-vars
 
 function IntlExample ({intl: { formatMessage: fmt }}) {
     return (
         <div>
-            <Link to="/">Back</Link>
+            <Back to="/">Back</Back>
+            <h2>Localization</h2>
             <Styled.ExampleSection>
-                <p>Using <code>FormattedMessage</code> component</p>
+                <div>Using <code>&#60;FormattedMessage /&#62;</code> component</div>
                 <i><FormattedMessage id="@loc:basic" /></i>
             </Styled.ExampleSection>
             <Styled.ExampleSection>
-                <p>With variables</p>
+                <div>With variables</div>
                 <i><FormattedMessage id="@loc:advanced" values={{subject: "multiverse"}} /></i>
             </Styled.ExampleSection>
             <Styled.ExampleSection>
-                <p>Using <code>intl.formatMessage</code> function in <code>props</code></p>
+                <div>Using <code>intl.formatMessage</code> function in <code>props</code></div>
                 <i>{fmt("@loc:advanced", {subject: "legacy"})}</i>
             </Styled.ExampleSection>
         </div>

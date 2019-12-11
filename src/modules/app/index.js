@@ -1,6 +1,6 @@
 import React from 'react';
 import { Router, Route, Switch } from 'react-router';
-import { Link } from 'react-router-dom';
+import Styled from "./styled-components"
 import StyledExample from "./StyledExample"
 import IntlExample from "./IntlExample"
 
@@ -12,10 +12,10 @@ const MainPage = ({ container }) => {
                 {JSON.stringify(container.configuration.config, null, 2)}
             </pre> */}
             <div>
-                <Link to='/styled'>Styled components</Link>
+                <Styled.Link to='/styled'>Styling</Styled.Link>
             </div>
             <div>
-                <Link to='/intl'>Copy</Link>
+                <Styled.Link to='/intl'>Localization</Styled.Link>
             </div>
         </div>
     );
