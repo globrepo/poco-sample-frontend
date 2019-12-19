@@ -1,0 +1,89 @@
+@import "~@globality/gi-webapp-theme/core";
+
+.wrapper
+    position: absolute
+    height: 100%
+    width: 100%
+
+.container
+    width: 100%
+    height: 100%
+    display: flex
+
+.component
+    text-align: center
+
+    .message
+        margin-top: 20px
+        font-size: $gi-font-size-semi-large
+        font-weight: $gi-font-weight-semi-bold
+
+    svg
+        color: $gi-blue
+
+.toolbar
+    width: 60px
+    background-color: #0d1a30
+
+.aside
+    display: flex
+    flex-direction: column
+    width: 100%
+    
+    h2 
+        padding: $gi-pad-medium
+
+    .nav
+        flex: 1
+        overflow: auto
+
+    .logo
+        padding: $gi-pad-xmedium
+        z-index: 1
+
+        svg
+            color: $gi-white
+            width: 115px
+            height: 29px
+            margin: auto
+            display: block
+
+
+$default-master-width: 180px
+
+.master
+    color: $gi-white
+    width: $default-master-width
+    background-color: $gi-blue
+    align-items: stretch
+
+    +media-breakpoint(phone)
+        position: absolute
+        left: -$default-master-width
+        z-index: 300
+        transition: left 0.2s ease
+        height: 100%
+
+        &.mobile-open
+            left: 0
+
+.detail
+    +size(100%)
+
+    +media-breakpoint(phone)
+        &.mobile-open
+            position: relative
+
+            &:after
+                background-color: $gi-white
+                content: ''
+                opacity: .8
+                z-index: 299
+                +size(100%)
+                +absolute(left 0 top 0)
+
+.detail-inner
+    padding: $gi-pad-large
+    +size(100%)
+    +media-breakpoint(phone)
+         width: 100vw

@@ -6,7 +6,6 @@ import loc from './locale.yml'; // eslint-disable-line no-unused-vars
 function IntlExample ({intl: { formatMessage: fmt }}) {
     return (
         <div>
-            <Styled.Back to="/">Back</Styled.Back>
             <h2>Localization</h2>
             <Styled.ExampleSection>
                 <div>Using <code>&#60;FormattedMessage /&#62;</code> component</div>
